@@ -1,0 +1,146 @@
+在一个数组里,我需要:
+
+//未直播
+名字
+头像      
+在线状态    //later
+直播间地址
+
+//直播中
+名字
+头像      
+在线状态    //later
+在线观看人数 //later  
+主播粉丝数
+总浏览量
+直播语言
+直播开始时间  //later
+直播间地址
+直播截图  //later
+
+
+https://wind-bow.glitch.me/twitch-api/streams/failverde  //在线主播状态
+
+{
+    "stream": {
+        "viewers": 1035,
+        "created_at": "2017-11-15T00:01:09Z",
+        "preview": {
+            "small": "https://static-cdn.jtvnw.net/previews-ttv/live_user_failverde-80x45.jpg",
+            "medium": "https://static-cdn.jtvnw.net/previews-ttv/live_user_failverde-320x180.jpg",
+            "large": "https://static-cdn.jtvnw.net/previews-ttv/live_user_failverde-640x360.jpg",
+            "template": "https://static-cdn.jtvnw.net/previews-ttv/live_user_failverde-{width}x{height}.jpg"
+        },
+        "channel": {
+            "broadcaster_language": "zh",
+            "language": "zh-tw",
+            "name": "failverde",
+            "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/929462bd67683c48-profile_image-300x300.png",
+            "url": "https://www.twitch.tv/failverde",
+            "views": 5753909,
+            "followers": 68372
+        },
+    },
+}
+https://wind-bow.glitch.me/twitch-api/streams/freecodecamp  //离线主播状态
+{
+    "stream": null,
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/streams/freecodecamp",
+        "channel": "https://api.twitch.tv/kraken/channels/freecodecamp"
+    }
+}
+
+
+https://api.twitch.tv/kraken/users/failverde?client_id=q443o8gke0lrzh0bhvlzhv4wd1kw6v  //主播个人信息
+{
+    "display_name": "懶貓",
+    "_id": 23852822,
+    "name": "failverde",
+    "type": "user",
+    "bio": "Hi 我是懶貓 我什麼遊戲都玩 希望你會喜歡~",
+    "created_at": "2011-08-04T07:43:30Z",
+    "updated_at": "2017-11-15T08:03:49Z",
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/929462bd67683c48-profile_image-300x300.png",
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/users/failverde"
+    }
+}
+
+
+
+
+https://api.twitch.tv/kraken/channels/freecodecamp?client_id=q443o8gke0lrzh0bhvlzhv4wd1kw6v  //离线||在线主播通道
+
+{
+    "mature": false,
+    "status": "Some GoLang Today #go #golang #youtube",
+    "broadcaster_language": "en",
+    "display_name": "FreeCodeCamp",
+    "game": "Creative",
+    "language": "en",
+    "_id": 79776140,
+    "name": "freecodecamp",
+    "created_at": "2015-01-14T03:36:47Z",
+    "updated_at": "2017-11-15T10:31:00Z",
+    "partner": false,
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_image-d9514f2df0962329-300x300.png",
+    "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-channel_offline_image-b8e133c78cd51cb0-1920x1080.png",
+    "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/freecodecamp-profile_banner-6f5e3445ff474aec-480.png",
+    "profile_banner_background_color": null,
+    "url": "https://www.twitch.tv/freecodecamp",
+    "views": 199817,
+    "followers": 11308,
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/channels/freecodecamp",
+        "follows": "https://api.twitch.tv/kraken/channels/freecodecamp/follows",
+        "commercial": "https://api.twitch.tv/kraken/channels/freecodecamp/commercial",
+        "stream_key": "https://api.twitch.tv/kraken/channels/freecodecamp/stream_key",
+        "chat": "https://api.twitch.tv/kraken/chat/freecodecamp",
+        "features": "https://api.twitch.tv/kraken/channels/freecodecamp/features",
+        "subscriptions": "https://api.twitch.tv/kraken/channels/freecodecamp/subscriptions",
+        "editors": "https://api.twitch.tv/kraken/channels/freecodecamp/editors",
+        "teams": "https://api.twitch.tv/kraken/channels/freecodecamp/teams",
+        "videos": "https://api.twitch.tv/kraken/channels/freecodecamp/videos"
+    },
+    "delay": null,
+    "banner": null,
+    "background": null
+}
+{
+    "mature": false,
+    "status": "【M.E. 懶貓】說謊者之國 一年最後一天",
+    "broadcaster_language": "zh",
+    "display_name": "懶貓",
+    "game": null,
+    "language": "zh-tw",
+    "_id": 23852822,
+    "name": "failverde",
+    "created_at": "2011-08-04T07:43:30Z",
+    "updated_at": "2017-11-15T10:33:32Z",
+    "partner": true,
+    "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/929462bd67683c48-profile_image-300x300.png",
+    "video_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/failverde-channel_offline_image-a138498999ba14c3-1920x1080.png",
+    "profile_banner": "https://static-cdn.jtvnw.net/jtv_user_pictures/088c1837-b7f0-4a7e-b4db-873005dac969-profile_banner-480.png",
+    "profile_banner_background_color": null,
+    "url": "https://www.twitch.tv/failverde",
+    "views": 5757866,
+    "followers": 68381,
+    "_links": {
+        "self": "https://api.twitch.tv/kraken/channels/failverde",
+        "follows": "https://api.twitch.tv/kraken/channels/failverde/follows",
+        "commercial": "https://api.twitch.tv/kraken/channels/failverde/commercial",
+        "stream_key": "https://api.twitch.tv/kraken/channels/failverde/stream_key",
+        "chat": "https://api.twitch.tv/kraken/chat/failverde",
+        "features": "https://api.twitch.tv/kraken/channels/failverde/features",
+        "subscriptions": "https://api.twitch.tv/kraken/channels/failverde/subscriptions",
+        "editors": "https://api.twitch.tv/kraken/channels/failverde/editors",
+        "teams": "https://api.twitch.tv/kraken/channels/failverde/teams",
+        "videos": "https://api.twitch.tv/kraken/channels/failverde/videos"
+    },
+    "delay": null,
+    "banner": null,
+    "background": null
+}
+
+
